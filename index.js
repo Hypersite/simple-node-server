@@ -46,7 +46,7 @@ app.get("/login", (req, res) => {
       },
     });
   } else {
-    res.status(400);
+    res.status(401);
     res.send({ message: "Invalid credentials" });
   }
 });
